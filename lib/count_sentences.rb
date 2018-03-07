@@ -7,7 +7,7 @@ class String
   end
 
   def question?
-
+    self.match(/[.]$/) ? true : false
   end
 
   def exclamation?
