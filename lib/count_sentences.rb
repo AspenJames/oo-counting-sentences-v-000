@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     sent_arr = []
-    sent_arr << self.scan(/.*[.?!]$/)
+    sent_arr << self.grep(/.*[.?!]/)
     sent_arr.length
   end
 end
