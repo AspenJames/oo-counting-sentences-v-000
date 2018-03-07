@@ -15,8 +15,6 @@ class String
   end
 
   def count_sentences
-    sent_arr = []
-    sent_split = self.split
-    sent_split.grep(/.*[.?!]/).length
+    self.split.grep(/.*[.?!]/).length
   end
 end
